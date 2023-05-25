@@ -10,9 +10,9 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class ExpenseService {
-
+    @Autowired
     private MenuRepo menuRepo;
-
+    @Autowired
     private GiftRepo giftRepo;
 
     public Expense getTotal(Integer numberGuest) {
