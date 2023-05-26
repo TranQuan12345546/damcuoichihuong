@@ -1,8 +1,6 @@
 package com.example.damcuoichihuong.service;
 
 import com.example.damcuoichihuong.entity.Expense;
-import com.example.damcuoichihuong.entity.Gift;
-import com.example.damcuoichihuong.entity.Menu;
 import com.example.damcuoichihuong.repository.GiftRepo;
 import com.example.damcuoichihuong.repository.MenuRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,8 +10,13 @@ import org.springframework.stereotype.Service;
 public class ExpenseService {
     @Autowired
     private MenuRepo menuRepo;
-    @Autowired
+    //@Autowired
     private GiftRepo giftRepo;
+
+
+    private Expense expense;
+
+
 
     public Expense getTotal(Integer numberGuest) {
         Expense expense = new Expense();
